@@ -1,0 +1,8 @@
+---
+# vars file for router_configuration
+
+router_vars:
+ interface_name: "FastEthernet0/1"
+ descrip: "SOUTH-CUSTOMER"
+ IP4_ADDR: "10.10.20.0/29"
+ IP6_ADDR: "2001:db8:2001::0/64"

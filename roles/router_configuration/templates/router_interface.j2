@@ -1,0 +1,5 @@
+interface {{ item.interface_name }}
+  description {{ item.descrip }}
+  ip address {{ item.IP4_ADDR | ipaddr('2') | ipaddr('address') }} {{ item.IP4_ADDR | ipv4('netmask') }}
+  ipv6 address {{ item.IP6_ADDR | ipaddr('net') | ipaddr('9') }}
+  no shutdown

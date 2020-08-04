@@ -1,0 +1,11 @@
+[IOS]
+router_a ansible_host=YOUR_ROUTER_IP_ADDRESS
+
+[IOS:vars]
+ansible_network_os=ios
+ansible_ssh_user=YOUR_ROUTER_USERNAME
+ansible_ssh_pass=SSH_PASSWORD
+ansible_become=yes
+ansible_become_method=enable
+ansible_become_password=ROUTER_SECRET_PASS
+

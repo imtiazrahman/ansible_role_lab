@@ -1,0 +1,12 @@
+---
+
+- name: PLAY START
+  hosts: router_a
+  connection: network_cli
+  gather_facts: no
+
+  vars:
+    ansible_python_interpreter: /usr/bin/python
+
+  roles:
+    - router_configuration
